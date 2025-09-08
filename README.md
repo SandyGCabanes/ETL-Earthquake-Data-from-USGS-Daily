@@ -1,5 +1,5 @@
 # Earthquake Data Pipeline (Quick Summary)
-# Airflow, Google Cloud Composer, BigQuery, Python
+## Airflow, Google Cloud Composer, BigQuery, Python
 
 ## [Technical README](README-tech.md)
 ## Objective:
