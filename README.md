@@ -1,4 +1,5 @@
 # Earthquake Data Pipeline (Client Summary)
+# Airflow, Google Cloud Composer, Python
 
 ## Objective:
 
@@ -42,7 +43,7 @@ This automated pipeline pulls daily earthquake data from a trusted public source
 
 ---
 
- Big Idea to stakeholder in under 60 seconds:
+ Big Idea in under 60 seconds:
 
 > “It’s a daily earthquake data pipeline that runs in the cloud, stores everything securely, and gives us clean tables for analysis—no manual work, no missing files, and everything’s audit-ready.”
 
