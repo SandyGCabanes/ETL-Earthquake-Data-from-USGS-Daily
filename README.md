@@ -1,4 +1,4 @@
-# Earthquake Data Pipeline (Client Summary)
+# Earthquake Data Pipeline (Quick Summary)
 # Airflow, Google Cloud Composer, BigQuery, Python
 
 ## Objective:
