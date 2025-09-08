@@ -18,7 +18,7 @@ This automated pipeline pulls daily earthquake data from a trusted public source
 - **Clean & Searchable**: Final tables are easy to filter by date, location, or magnitude.
 - **Audit-Ready**: Every step is logged, versioned, and reproducible.
 
-## What It Does
+## What It Does:  [Click here for the flowchart](flowchart_composer.txt)
 
 1. **Gets the Data**  
    Pulls earthquake reports from the USGS website every morning.
