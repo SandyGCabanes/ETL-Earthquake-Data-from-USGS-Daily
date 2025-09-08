@@ -1,4 +1,4 @@
-# Earthquake Data Pipeline (Composer Version 7)
+# Earthquake Data Pipeline (Composer)
 
 ## Overview
 
@@ -17,6 +17,7 @@ This Airflow DAG (`composer_version7.py`) modernizes a legacy multi-script earth
 2. **Upload**: Saves raw data as CSV to a GCS bucket.
 3. **Load**: Ingests CSV into a raw BigQuery table.
 4. **Transform**: Cleans and partitions data into a final staging table in BigQuery.
+<br> ![Video](https://github.com/SandyGCabanes/ETL-Earthquake-Data-from-USGS-Daily/blob/main/composer_usgs_2x.mp4_3.0x_720px_.gif)
 
 ## Airflow Configuration
 
