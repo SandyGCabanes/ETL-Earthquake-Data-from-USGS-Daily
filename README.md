@@ -1,6 +1,7 @@
 # Earthquake Data Pipeline (Quick Summary)
 # Airflow, Google Cloud Composer, BigQuery, Python
 
+## [Technical README](README-tech.md)
 ## Objective:
 
 This automated pipeline pulls daily earthquake data from a trusted public source (USGS) stores it securely in the cloud (GCS, BigQuery), and organizes it into clean, searchable tables for analysis (BigQuery). It replaces a manual, error-prone process with a reliable system that runs itself.
