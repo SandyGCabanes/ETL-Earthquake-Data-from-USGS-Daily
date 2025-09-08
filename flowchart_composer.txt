@@ -1,0 +1,43 @@
+┌────────────────────────────────────────────────┐
+│ 0. Set-Up: Airflow Configuration               │
+│   - Define Airflow Variables:                  │
+│       • gcp_project_id                         │
+│       • gcs_bucket                             │
+│       • bq_dataset                             │
+│   - Secure credentials via Airflow UI          │
+│   - Schedule DAG: @daily                       │
+│   - DAG ID: earthquake_data_pipeline_sandy_v2  │
+└────────────┬───────────────────────────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│ 1. Extract Earthquake Data │
+│   (USGS API via @task)     │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│ 2. Upload Raw CSV to GCS   │
+│   (Google Cloud Storage)   │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────┐
+│ 3. Load CSV into BigQuery  │
+│   (GCSToBigQueryOperator)  │
+└────────────┬───────────────┘
+             │
+             ▼
+┌────────────────────────────────────────────┐
+│ 4. Transform & Partition Clean Table       │
+│   (BigQueryInsertJobOperator)              │
+│   - Normalize location via REGEXP_EXTRACT  │
+│   - Filter null timestamps                 │
+│   - Partition by date (`dt`)               │
+└────────────┬───────────────────────────────┘
+             │
+             ▼
+┌────────────────────────────────────────────┐
+│ 5. Final Output: Staging Table in BigQuery │
+│   - Clean, audit-ready, date-indexed       │
+└────────────────────────────────────────────┘
