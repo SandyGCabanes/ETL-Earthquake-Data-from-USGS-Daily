@@ -10,7 +10,7 @@ This automated pipeline pulls daily earthquake data from a trusted public source
 - Goes through each task from extract to upload to transform
 - Shows the airflow UI after successful python loading to earthquake raw table in BigQuery
 - Shows the transformation of earthquake raw table to earthquake stage table in BigQuery
-<br>![Project Walkthrough](https://github.com/SandyGCabanes/ETL-Earthquake-Data-from-USGS-Daily/blob/main/composer_usgs_etl_walkthrough_2x.mp4_3.0x_720px_.gif)
+<br>![Project Walkthrough](composer_usgs_2x.mp4_3.0x_720px_.gif)
 
 ## Why This Matters
 
