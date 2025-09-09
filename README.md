@@ -24,7 +24,7 @@ This automated pipeline pulls daily earthquake data from a trusted public source
 - Shows the transformation of earthquake raw table to earthquake stage table in BigQuery
 <br>![Project Walkthrough](composer_usgs_2x.mp4_3.0x_720px_.gif)
 
-## What It Does:  [Click here for the workflow](flowchart_composer.txt)
+## Workflow:  [Click here for the flowchart version](flowchart_composer.txt)
 1. **Extracts the Data Using API call**  
    Pulls earthquake reports from the USGS website every morning.
 
