@@ -11,7 +11,7 @@ This automated pipeline pulls daily earthquake data from a trusted public source
 - **Managers**: Need confidence that the system won’t break or go stale.
 - **Auditors**: Can trace every step, every file, every transformation.
 
-## Why This Matters
+## Advantages of This ETL Process
 
 - **Daily Updates**: Fresh data every day, no human intervention needed. Could be re-applied to daily or weekly sales data.
 - **Cloud-Based**: Everything lives in Google Cloud—no local files, no lost spreadsheets.
